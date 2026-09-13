@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Broken Key Exchange</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="badge">CYBERWOLF LABS • CTF 042</div>
+  <h1>The Broken Key Exchange</h1>
+  <p class="lead">A legacy Diffie–Hellman service was captured during an internal security review.</p>
+  <section class="panel">
+    <h2>Mission</h2>
+    <p>The exchange claims to use large-group Diffie–Hellman, but the implementation accepts peer public values without validating their subgroup. Analyze the supplied transcript, recover the secret exponent, and decrypt the protected message.</p>
+    <p class="note">No brute force of the full private key is required. The weakness is mathematical.</p>
+  </section>
+  <section class="downloads">
+    <a href="/download/exchange_capture.txt">Download exchange_capture.txt</a>
+    <a href="/download/protected_message.bin">Download protected_message.bin</a>
+    <a href="/download/README.txt">Download README.txt</a>
+  </section>
+  <footer>Category: CRYPTO &nbsp;•&nbsp; Difficulty: HARD &nbsp;•&nbsp; 400 points</footer>
+</main>
+</body>
+</html>
